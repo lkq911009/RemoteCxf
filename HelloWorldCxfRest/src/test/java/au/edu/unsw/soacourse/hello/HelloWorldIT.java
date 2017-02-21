@@ -29,7 +29,7 @@ public class HelloWorldIT {
         Response r = client.accept("text/plain").get();
         assertEquals(Response.Status.OK.getStatusCode(), r.getStatus());
         String value = IOUtils.toString((InputStream)r.getEntity());
-        assertEquals("SierraTangoNevada", value);
+        assertEquals("SierraTangoNevada11", value);
     }
 
     @Test
